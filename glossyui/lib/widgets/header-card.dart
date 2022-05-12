@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class HeaderGlossyCard extends StatelessWidget {
+class HeaderGlossyCard extends StatefulWidget {
   const HeaderGlossyCard({Key? key}) : super(key: key);
 
+  @override
+  State<HeaderGlossyCard> createState() => _HeaderGlossyCardState();
+}
+
+class _HeaderGlossyCardState extends State<HeaderGlossyCard> {
+  String? productType;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -14,7 +20,7 @@ class HeaderGlossyCard extends StatelessWidget {
           ),
           boxShadow: [
             BoxShadow(
-              color: Color(0xff202020),
+              color: Color(0xff191919),
               spreadRadius: -8,
               blurRadius: 21.0,
               offset: Offset(10, 10),
